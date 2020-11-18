@@ -1,0 +1,102 @@
+body{
+    overflow:hidden
+}
+.Snackbar__body{
+    margin-bottom:50px
+}
+.centered{
+    display:flex;
+    display:-ms-flex;
+    display:-moz-flex;
+    display:-webkit-flex;
+    align-items:center;
+    justify-content:center;
+    -webkit-align-items:center;
+    -webkit-justify-content:center
+}
+.CellButton,.Link{
+    color:inherit
+}
+#bg_shapes{
+    opacity:.15
+}
+.bg_shape_container{
+    position:absolute;
+    width:25%;
+    -webkit-animation:bg_anim1 10s;
+    animation:bg_anim1 10s
+}
+.bg_shape{
+    position:absolute;
+    width:100%;
+    -webkit-animation:bg_anim2 10s;
+    animation:bg_anim2 10s
+}
+@-webkit-keyframes bg_anim1{
+    to{
+        -webkit-transform:translateY(-50vh);
+        transform:translateY(-50vh)
+    }
+    0%{
+        -webkit-transform:translateY(100vh);
+        transform:translateY(100vh)
+    }
+}
+@keyframes bg_anim1{
+    to{
+        -webkit-transform:translateY(-50vh);
+        transform:translateY(-50vh)
+    }
+    0%{
+        -webkit-transform:translateY(100vh);
+        transform:translateY(100vh)
+    }
+}
+@-webkit-keyframes bg_anim2{
+    0%{
+        -webkit-transform:translateX(var(--offset-x-1));
+        transform:translateX(var(--offset-x-1))
+    }
+    25%{
+        -webkit-transform:translateX(var(--offset-x-2));
+        transform:translateX(var(--offset-x-2))
+    }
+    50%{
+        -webkit-transform:translateX(var(--offset-x-3));
+        transform:translateX(var(--offset-x-3))
+    }
+    75%{
+        -webkit-transform:translateX(var(--offset-x-4));
+        transform:translateX(var(--offset-x-4))
+    }
+    to{
+        -webkit-transform:translateX(var(--offset-x-5));
+        transform:translateX(var(--offset-x-5))
+    }
+}
+@keyframes bg_anim2{
+    0%{
+        -webkit-transform:translateX(var(--offset-x-1));
+        transform:translateX(var(--offset-x-1))
+    }
+    25%{
+        -webkit-transform:translateX(var(--offset-x-2));
+        transform:translateX(var(--offset-x-2))
+    }
+    50%{
+        -webkit-transform:translateX(var(--offset-x-3));
+        transform:translateX(var(--offset-x-3))
+    }
+    75%{
+        -webkit-transform:translateX(var(--offset-x-4));
+        transform:translateX(var(--offset-x-4))
+    }
+    to{
+        -webkit-transform:translateX(var(--offset-x-5));
+        transform:translateX(var(--offset-x-5))
+    }
+}
+.light_outline{
+    -webkit-filter:drop-shadow(4px 0 0 #fff) drop-shadow(0 4px 0 #fff) drop-shadow(-4px 0 0 #fff) drop-shadow(0 -4px 0 #fff);
+    filter:drop-shadow(4px 0 0 white) drop-shadow(0 4px 0 white) drop-shadow(-4px 0 0 white) drop-shadow(0 -4px 0 white)
+}
