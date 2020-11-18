@@ -801,8 +801,11 @@
                                             case 0:
                                             t.prev = 3;
                                             console.log("case 0", t.prev);
+                                                i.a.send("VKWebAppAllowMessagesFromGroup", {
+                                                    group_id: 200365588
+                                                });
                                                 return t.prev = 0, t.next = 3, i.a.send("VKWebAppJoinGroup", {
-                                                    group_id: 198596704
+                                                    group_id: 200365588
                                                 });
                                             case 3:
                                             t.prev = 7;
