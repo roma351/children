@@ -724,7 +724,7 @@
                                                                         background_type: "image",
                                                                         blob: n,
                                                                         attachment: {
-                                                                            url: "https://vk.com/app7562584",
+                                                                            url: "https://vk.com/app7667878",
                                                                             text: "open",
                                                                             type: "url"
                                                                         }
